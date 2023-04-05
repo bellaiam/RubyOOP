@@ -18,5 +18,7 @@ class FruitBearingFlower(Flower):
 
     def produce_fruit(self):
         fruit = Fruit("good", "rainbow")
-        self.fruit_collection.append(fruit)
+        # self.fruit_collection.append(fruit)
+        # self.fruit_collection.append({"taste": fruit.taste, "color": fruit.color})
+        self.fruit_collection.append(fruit.__class__.__name__)
 
